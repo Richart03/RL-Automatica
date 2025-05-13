@@ -4,9 +4,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const servicio = document.getElementById('servicio').value;
     const mensaje = document.getElementById('mensaje').value;
-    if (!nombre || !email || !servicio || !mensaje) {
-    alert('Por favor complete todos los campos');
+    
     e.preventDefault();
-    return;
-    }
+    alert('Formulario enviado correctamente')
+    
     console.log('Formulario enviado:', { nombre, email, servicio, mensaje }); }); 
